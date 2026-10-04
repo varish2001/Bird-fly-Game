@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #dff7ff 0%, #9ad5e6 100%);
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  position: relative;
+  width: min(90vw, 900px);
+  height: min(80vh, 600px);
+  background: linear-gradient(180deg, #76d8f2 0%, #c9f0ff 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(17, 72, 98, 0.15);
+}
+
+.score {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.bird-png {
+  position: absolute;
+  left: 120px;
+  top: 200px;
+  width: 52px;
+  height: auto;
+  z-index: 2;
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.15));
+}
+
+.pipe {
+  position: absolute;
+  width: 62px;
+  background: linear-gradient(180deg, #57d16f 0%, #2a9d4a 100%);
+  border: 4px solid rgba(12, 96, 34, 0.7);
+  border-radius: 14px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.pipe-top {
+  top: 0;
+}
+
+.pipe-bottom {
+  bottom: 0;
+}
